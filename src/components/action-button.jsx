@@ -9,6 +9,12 @@ import {
 	MenuTrigger,
 	tokens,
 } from '@fluentui/react-components';
+
+import {
+	ArrowExportFilled,
+	ArrowImportFilled,
+	DocumentBorderPrintFilled,
+} from '@fluentui/react-icons';
 import UseDevice from '../hooks/useDevice';
 
 const actions = [
@@ -59,9 +65,18 @@ export const ActionButton = () => {
 	if (isDesktop) {
 		return (
 			<div className={classes.flexWrapper}>
-				<Button>Import</Button>
-				<Button>Export</Button>
-				<Button>View</Button>
+				<Button icon={<ArrowImportFilled />} iconPosition="after">
+					Import
+				</Button>
+				<Button icon={<ArrowExportFilled />} iconPosition="after">
+					Export{' '}
+				</Button>
+				<Button
+					icon={<DocumentBorderPrintFilled />}
+					iconPosition="after"
+				>
+					View
+				</Button>
 			</div>
 		);
 	}

@@ -30,6 +30,7 @@ export function LayoutProvider({ children }) {
 
 	useEffect(() => {
 		calcDeviceWidth();
+		window.onresize = calcDeviceWidth;
 	}, []);
 
 	return (

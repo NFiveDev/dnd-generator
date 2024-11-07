@@ -1,12 +1,16 @@
 import './App.css';
 import { makeStyles, Title1, tokens } from '@fluentui/react-components';
 import { AppBar, MonsterForm } from './components';
+import dragonBg from './assets/background.jpeg';
 
 const useStyles = makeStyles({
 	root: {
 		minHeight: '100vh',
 		minWidth: '100vw',
-		background: tokens.colorNeutralBackground3,
+		backgroundImage: `url(${dragonBg})`,
+		backgroundPosition: 'center',
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: 'cover',
 	},
 	contentWrapper: {
 		maxWidth: '1280px',

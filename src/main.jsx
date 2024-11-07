@@ -1,5 +1,10 @@
 import { createRoot } from 'react-dom/client';
-import { FluentProvider, webLightTheme } from '@fluentui/react-components';
+import {
+	FluentProvider,
+	webLightTheme,
+	tokens,
+	makeStyles,
+} from '@fluentui/react-components';
 
 import App from './App';
 import { LayoutProvider } from './providers/layout-provider';

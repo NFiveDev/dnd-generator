@@ -15,7 +15,7 @@ import {
 	ArrowImportFilled,
 	DocumentBorderPrintFilled,
 } from '@fluentui/react-icons';
-import UseDevice from '../hooks/useDevice';
+import UseDevice from '../../hooks/useDevice';
 
 const actions = [
 	{
